@@ -1,0 +1,39 @@
+{
+    "name": "bantenprov/tarif-pemakaian-bahu-jalan",
+    "description": "Daftar Retribusi",
+    "authors": [
+        {
+            "name": "bantenprov",
+            "email": "developer.bantenprov@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "support": {
+      "source": "https://github.com/bantenprov/tarif-pemakaian-bahu-jalan,",
+      "issues": "https://github.com/bantenprov/tarif-pemakaian-bahu-jalan/issues",
+      "wiki": "https://github.com/bantenprov/tarif-pemakaian-bahu-jalan/wiki"
+    },
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.5.*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Bantenprov\\TarifPemakaianBahuJalan\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bantenprov\\TarifPemakaianBahuJalan\\TarifPemakaianBahuJalanServiceProvider"
+            ],
+            "aliases": {
+                "TarifPemakaianBahuJalan": "Bantenprov\\TarifPemakaianBahuJalan\\Facades\\TarifPemakaianBahuJalan"
+            }
+        }
+    }
+}
